@@ -37,11 +37,20 @@ namespace POO_ADS_N.Tests
             _.Sacar(100);
             Assert.AreEqual(1900.0, _.GetSaldo());
         }
-        [TestMethod()]
+        [TestMethod]
         public void InstanciarContaExibirDadosTest()
         {
             Conta _ = new Conta(1, "Paulo", 2000.0);
-            Assert.AreEqual("Paulo. Conta 1. Saldo: R$ 2.000,00", _.Mostrar());
+            var currentConsoleOut = Console.Out;
+            string expected = "Paulo. Conta 1. Saldo: R$ 2.000,00";
+
+            using (ConsoleOutput consoleOutput = new ConsoleOutput())
+            {
+                _.Mostrar();
+                Assert.AreEqual(expected, consoleOutput.GetOuput());
+            }
+
+            Assert.AreEqual(currentConsoleOut, Console.Out);
         }
     }
 }

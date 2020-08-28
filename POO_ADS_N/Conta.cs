@@ -34,11 +34,10 @@ namespace POO_ADS_N
             saldo -= saque;
         }
 
-        public string Mostrar()
+        public void Mostrar()
         {
-            string result = $"{titular}. Conta {numero}. Saldo: {saldo.ToString("C")}";
+            string result = $"{titular}. Conta {numero.ToString()}. Saldo: {saldo.ToString("C")}";
             Console.WriteLine(result);
-            return result;
         }
     }
 }
