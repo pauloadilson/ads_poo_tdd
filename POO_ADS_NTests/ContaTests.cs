@@ -42,6 +42,7 @@ namespace POO_ADS_N.Tests
         {
             Conta _ = new Conta(1, "Paulo", 2000.0);
             var currentConsoleOut = Console.Out;
+            // currentConsoleOut registra o console out no início
             string expected = "Paulo. Conta 1. Saldo: R$ 2.000,00";
 
             using (ConsoleOutput consoleOutput = new ConsoleOutput())
@@ -51,6 +52,7 @@ namespace POO_ADS_N.Tests
             }
 
             Assert.AreEqual(currentConsoleOut, Console.Out);
+            // Essa comparação serve para verificar se ConsoleOutput Disposed/limpou o output depois do teste
         }
     }
 }
