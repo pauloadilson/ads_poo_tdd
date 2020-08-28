@@ -19,5 +19,26 @@ namespace POO_ADS_N
             this.saldo = saldo;
         }
 
+        public double GetSaldo()
+        {
+            return this.saldo;
+        }
+
+        public void Depositar(double deposito)
+        {
+            saldo += deposito;
+        }
+
+        public void Sacar(double saque)
+        {
+            saldo -= saque;
+        }
+
+        public string Mostrar()
+        {
+            string result = $"{titular}. Conta {numero}. Saldo: {saldo.ToString("C")}";
+            Console.WriteLine(result);
+            return result;
+        }
     }
 }
