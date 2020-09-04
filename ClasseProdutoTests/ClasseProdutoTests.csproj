@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCF9B555-8266-4FE3-87D3-F3C12290F645}</ProjectGuid>
+    <ProjectGuid>{FE298712-C99B-4D49-9C53-C739D41A6D15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClasseFuncionarioTests</RootNamespace>
-    <AssemblyName>ClasseFuncionarioTests</AssemblyName>
+    <RootNamespace>ClasseProdutoTests</RootNamespace>
+    <AssemblyName>ClasseProdutoTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,16 +57,16 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ConsoleOutput.cs" />
-    <Compile Include="FuncionarioTests.cs" />
+    <Compile Include="ProdutoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClasseFuncionario\ClasseFuncionario.csproj">
-      <Project>{656A4FF3-3B15-4132-83CA-23AFDB76F873}</Project>
-      <Name>ClasseFuncionario</Name>
+    <ProjectReference Include="..\ClasseProduto\ClasseProduto.csproj">
+      <Project>{D54796D8-5BAF-4CEA-A446-3493DA85F494}</Project>
+      <Name>ClasseProduto</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

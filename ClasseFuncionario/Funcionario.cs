@@ -8,15 +8,21 @@ namespace ClasseFuncionario
 {
     public class Funcionario
     {
-        private int codigo;
-        private string nome;
-        private double salario;
+        public int codigo;
+        public string nome;
+        public double salario;
 
         public Funcionario(int codigo = 0, string nome = "", double salario = 0.0)
         {
             this.codigo = codigo;
             this.nome = nome;
             this.salario = salario;
+        }
+
+        public void Mostrar()
+        {
+            string result = $"Funcionário: {nome}. Código {codigo}. Salário: {salario.ToString("C")}";
+            Console.WriteLine(result);
         }
     }
 }
