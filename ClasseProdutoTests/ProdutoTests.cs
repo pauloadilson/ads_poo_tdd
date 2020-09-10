@@ -34,5 +34,13 @@ namespace ClasseProduto.Tests
             Assert.AreEqual(currentConsoleOut, Console.Out);
 
         }
+        [TestMethod()]
+        public void CriaTresProdutosSomaTotalTest()
+        {
+            Produto _ = new Produto(110, "Mouse", 9.9);
+            Produto _2 = new Produto(111, "Teclado", 19.9);
+            Produto _3 = new Produto(112, "Mousepad", 5.9);
+            Assert.AreEqual(35,7, _.somaProdutos(_,_2,_3));
+        }
     }
 }

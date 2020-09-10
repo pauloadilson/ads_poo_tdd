@@ -24,5 +24,13 @@ namespace ClasseProduto
             string result = $"Produto: {descricao}. Código {codigo}. Preço: {preco.ToString("C")}";
             Console.WriteLine(result);
         }
+
+        public double somaProdutos(params Produto[] args)
+        {
+            double sum = 0.0;
+            foreach (Produto produto in args)
+                sum += produto.preco;
+            return sum;
+        }
     }
 }
