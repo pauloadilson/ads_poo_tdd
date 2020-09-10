@@ -10,9 +10,10 @@ namespace ClasseFuncionario
     {
         static void Main(string[] args)
         {
-            Funcionario[] funcionarios = new Funcionario[2];
-            Console.WriteLine("Vamos realizar o cadastro de dois funcionários!");
-            for (int i = 0; i < 2; i++)
+            Console.WriteLine("Quantos funcionários deseja cadastrar?");
+            int nCadastros = Convert.ToInt32(Console.ReadLine());
+            Funcionario[] funcionarios = new Funcionario[nCadastros];
+            for (int i = 0; i < nCadastros; i++)
             {
                 funcionarios[i] = new Funcionario();
                 Console.Write($"Informe o código do {i + 1}º funcionário: ");
@@ -28,9 +29,7 @@ namespace ClasseFuncionario
             if (resposta == "s")
             {
                 foreach (Funcionario f in funcionarios)
-                {
                     f.Mostrar();
-                }
                 Console.ReadKey();
             }
             else
