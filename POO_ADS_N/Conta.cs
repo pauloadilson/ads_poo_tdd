@@ -8,9 +8,9 @@ namespace POO_ADS_N
 {
     public class Conta
     {
-        private int numero;
-        private string titular;
-        private double saldo;
+        public int numero;
+        public string titular;
+        public double saldo;
 
         public Conta(int numero = 0, string titular = "", double saldo = 0.0)
         {
@@ -38,6 +38,12 @@ namespace POO_ADS_N
         {
             string result = $"{titular}. Conta {numero.ToString()}. Saldo: {saldo.ToString("C")}";
             Console.WriteLine(result);
+        }
+
+        public void Transferencia(float valorTranferido, Conta destino)
+        {
+            saldo -= valorTranferido;
+            destino.saldo += valorTranferido;
         }
     }
 }

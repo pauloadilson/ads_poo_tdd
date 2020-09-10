@@ -37,6 +37,15 @@ namespace POO_ADS_N.Tests
             _.Sacar(100);
             Assert.AreEqual(1900.0, _.GetSaldo());
         }
+        [TestMethod()]
+        public void InstanciarDuasContasTransferirValorTest()
+        {
+            Conta _1 = new Conta(1, "Paulo", 2000.0);
+            Conta _2 = new Conta(2, "José", 4000.0);
+            _1.Transferencia(200, _2);
+            Assert.AreEqual(1800.0, _1.GetSaldo());
+            Assert.AreEqual(4200.0, _2.GetSaldo());
+        }
         [TestMethod]
         public void InstanciarContaExibirDadosTest()
         {
