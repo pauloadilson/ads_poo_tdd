@@ -11,6 +11,11 @@ namespace ClasseProduto
         public int codigo;
         public string descricao;
         public double preco;
+        public Produto[] produtos;
+        public double Preco { get => this.preco; set => this.preco = value; }
+        public string Descricao { get => this.descricao; set => this.descricao = value; }
+        public int Codigo { get => this.codigo; set => this.codigo = value; }
+        public Produto[] Produtos { get => this.Produtos; set => this.Produtos = value; }
 
         public Produto(int codigo = 0, string descricao = "", double preco = 0.0)
         {
