@@ -18,6 +18,19 @@ namespace ClasseProduto.Tests
             Assert.IsNotNull(_);
         }
         [TestMethod()]
+        public void CriaProdutoGetTest()
+        {
+            Produto _ = new Produto(110, "Mouse", 9.9);
+            Assert.AreEqual(9.9, _.Preco);
+        }
+        [TestMethod()]
+        public void CriaProdutoSetTest()
+        {
+            Produto _ = new Produto(110, "Mouse", 9.9);
+            _.Preco = 12.9;
+            Assert.AreEqual(12.9, _.Preco);
+        }
+        [TestMethod()]
         public void InstanciarMostrarTest()
         {
             
