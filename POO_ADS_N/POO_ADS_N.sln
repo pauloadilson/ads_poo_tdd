@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO_ADS_N", "POO_ADS_N.csproj", "{56B2F989-0F4B-47CE-A0E9-9C1F566590C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseConta", "ClasseConta.csproj", "{56B2F989-0F4B-47CE-A0E9-9C1F566590C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO_ADS_NTests", "..\POO_ADS_NTests\POO_ADS_NTests.csproj", "{23F6364C-905D-410F-AB58-4AD6A7ED00C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseContaTests", "..\POO_ADS_NTests\ClasseContaTests.csproj", "{23F6364C-905D-410F-AB58-4AD6A7ED00C0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseFuncionario", "..\ClasseFuncionario\ClasseFuncionario.csproj", "{656A4FF3-3B15-4132-83CA-23AFDB76F873}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayConta", "..\ArrayConta\ArrayConta.csproj", "{E90B34E0-6971-426F-A5C1-616588052363}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayContaTests", "..\ArrayContaTests\ArrayContaTests.csproj", "{5788224C-6D09-4F1C-BD08-EBED697A0BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncapsulamentoFuncionario", "..\EncapsulamentoFuncionario\EncapsulamentoFuncionario.csproj", "{A6F06F5D-E857-41DE-A246-48028BC4A523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncapsulamentoFuncionarioTests", "..\EncapsulamentoFuncionarioTests\EncapsulamentoFuncionarioTests.csproj", "{522BD177-319E-4E1D-948C-436A868C128F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncapsulamentoConta", "..\EncapsulamentoConta\EncapsulamentoConta.csproj", "{507FB42E-BF53-4112-AB76-7506D75C8B75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{5788224C-6D09-4F1C-BD08-EBED697A0BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5788224C-6D09-4F1C-BD08-EBED697A0BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5788224C-6D09-4F1C-BD08-EBED697A0BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F06F5D-E857-41DE-A246-48028BC4A523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F06F5D-E857-41DE-A246-48028BC4A523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F06F5D-E857-41DE-A246-48028BC4A523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F06F5D-E857-41DE-A246-48028BC4A523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522BD177-319E-4E1D-948C-436A868C128F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522BD177-319E-4E1D-948C-436A868C128F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522BD177-319E-4E1D-948C-436A868C128F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522BD177-319E-4E1D-948C-436A868C128F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507FB42E-BF53-4112-AB76-7506D75C8B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507FB42E-BF53-4112-AB76-7506D75C8B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507FB42E-BF53-4112-AB76-7506D75C8B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507FB42E-BF53-4112-AB76-7506D75C8B75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

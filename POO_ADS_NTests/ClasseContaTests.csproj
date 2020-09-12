@@ -64,9 +64,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\POO_ADS_N\POO_ADS_N.csproj">
+    <ProjectReference Include="..\POO_ADS_N\ClasseConta.csproj">
       <Project>{56B2F989-0F4B-47CE-A0E9-9C1F566590C7}</Project>
-      <Name>POO_ADS_N</Name>
+      <Name>ClasseConta</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
