@@ -17,11 +17,11 @@ namespace ClasseProduto
             {
                 produtos[i] = new Produto(); //deve-se instanciar cada posicao
                 Console.Write($"Informe o código do {i + 1}º produto: ");
-                produtos[i].codigo = Convert.ToInt32(Console.ReadLine());
+                produtos[i].Codigo = Convert.ToInt32(Console.ReadLine());
                 Console.Write($"Informe a descrição do produto: ");
-                produtos[i].descricao = Console.ReadLine();
+                produtos[i].Descricao = Console.ReadLine();
                 Console.Write($"Informe o preço: R$ ");
-                produtos[i].preco = Convert.ToDouble(Console.ReadLine());
+                produtos[i].Preco = Convert.ToDouble(Console.ReadLine());
                 produtos[i].Mostrar();
             }
             /* O que está abaixo não é possível: 

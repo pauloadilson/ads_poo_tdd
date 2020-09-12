@@ -8,14 +8,27 @@ namespace ClasseProduto
 {
     public class Produto
     {
-        public int codigo;
-        public string descricao;
-        public double preco;
-        public Produto[] produtos;
-        public double Preco { get => this.preco; set => this.preco = value; }
-        public string Descricao { get => this.descricao; set => this.descricao = value; }
-        public int Codigo { get => this.codigo; set => this.codigo = value; }
-        public Produto[] Produtos { get => this.Produtos; set => this.Produtos = value; }
+        private int codigo;
+        private string descricao;
+        private double preco;
+        public int Codigo
+        {
+            get { return this.codigo; }
+            set { this.codigo = value; }
+        }
+
+        public string Descricao
+        {
+            get { return this.descricao; }
+            set { this.descricao = value; }
+        }
+
+
+        public double Preco
+        {
+            get { return this.preco; }
+            set { this.preco = value; }
+        }
 
         public Produto(int codigo = 0, string descricao = "", double preco = 0.0)
         {
