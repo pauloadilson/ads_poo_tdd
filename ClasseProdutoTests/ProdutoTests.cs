@@ -21,14 +21,21 @@ namespace ClasseProduto.Tests
         public void CriaProdutoGetTest()
         {
             Produto _ = new Produto(110, "Mouse", 9.9);
+            Assert.AreEqual(110, _.Codigo);
+            Assert.AreEqual("Mouse", _.Descricao);
             Assert.AreEqual(9.9, _.Preco);
         }
         [TestMethod()]
         public void CriaProdutoSetTest()
         {
             Produto _ = new Produto(110, "Mouse", 9.9);
-            _.Preco = 12.9;
-            Assert.AreEqual(12.9, _.Preco);
+            _.Codigo = 1111;
+            _.Descricao = "Mouse 2D";
+            _.Preco = 52.9;
+            Assert.AreEqual(1111, _.Codigo);
+            Assert.AreEqual("Mouse 2D", _.Descricao);
+            Assert.AreEqual(52.9, _.Preco);
+
         }
         [TestMethod()]
         public void InstanciarMostrarTest()
