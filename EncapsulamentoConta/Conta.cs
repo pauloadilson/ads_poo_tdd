@@ -9,32 +9,52 @@ namespace EncapsulamentoConta
     public class Conta
     {
         private int numero;
+        private string titular;
+        private double saldo;
+        public Conta(int numero = 0, string titular = "", double saldo = 0.0)
+        {
+            this.numero = numero;
+            this.titular = titular;
+            this.saldo = saldo;
+        }
         public int Numero
         {
             get { return this.numero; }
             set { this.numero = value; }
         }
 
-        private string titular;
         public string Titular
         {
             get { return this.titular; }
             set { this.titular = value; }
         }
 
-        private double saldo;
         public double Saldo
         {
             get { return this.saldo; }
             set { this.saldo = value; }
         }
 
-
-        public Conta(int numero = 0, string titular = "", double saldo = 0.0)
+        public void Depositar(double deposito)
         {
-            this.numero = numero;
-            this.titular = titular;
-            this.saldo = saldo;
+            saldo += deposito;
+        }
+
+        public void Sacar(double saque)
+        {
+            saldo -= saque;
+        }
+
+        public void Mostrar()
+        {
+            string result = $"{titular}. Conta {numero}. Saldo: {saldo:C}";
+            Console.WriteLine(result);
+        }
+
+        public void Transferencia(float valorTranferido, Conta destino)
+        {
+            saldo -= valorTranferido;
+            destino.saldo += valorTranferido;
         }
     }
 }

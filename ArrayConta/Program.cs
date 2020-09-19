@@ -27,6 +27,7 @@ namespace ArrayConta
 
             Console.Write("\nDeseja mostrar todos os dados em sequência? (S ou N) ");
             string resposta = Console.ReadLine().ToLower();
+
             if (resposta == "s")
             {
                 foreach (Conta c in contas)
