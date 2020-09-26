@@ -11,27 +11,26 @@ namespace ClasseProduto
         private int codigo;
         private string descricao;
         private double preco;
-        public int Codigo
+        private static int qtdeInstancias = 0;
+
+        public int Codigo { get => this.codigo; set => this.codigo = value; } 
+        public string Descricao { get => this.descricao; set => this.descricao = value;}
+        public double Preco { get => this.preco; set => this.preco = value; }
+        public static int QtdeInstancias { get => qtdeInstancias; }
+
+        public Produto() 
         {
-            get { return this.codigo; }
-            set { this.codigo = value; }
+            qtdeInstancias++;
         }
-
-        public string Descricao
+        public Produto(int codigo, double preco)
         {
-            get { return this.descricao; }
-            set { this.descricao = value; }
+            qtdeInstancias++;
+            this.codigo = codigo;
+            this.preco = preco;
         }
-
-
-        public double Preco
+        public Produto(int codigo, string descricao, double preco)
         {
-            get { return this.preco; }
-            set { this.preco = value; }
-        }
-
-        public Produto(int codigo = 0, string descricao = "", double preco = 0.0)
-        {
+            qtdeInstancias++;
             this.codigo = codigo;
             this.descricao = descricao;
             this.preco = preco;
@@ -39,16 +38,8 @@ namespace ClasseProduto
 
         public void Mostrar()
         {
-            string result = $"Produto: {descricao}. Código {codigo}. Preço: {preco.ToString("C")}";
+            string result = $"Código {codigo}.\t Preço: {preco:C}.\t Produto: {descricao}.";
             Console.WriteLine(result);
-        }
-
-        public double somaProdutos(params Produto[] args)
-        {
-            double sum = 0.0;
-            foreach (Produto produto in args)
-                sum += produto.preco;
-            return sum;
         }
     }
 }
