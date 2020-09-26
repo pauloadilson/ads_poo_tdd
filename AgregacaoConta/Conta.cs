@@ -8,27 +8,13 @@ namespace AgregacaoConta
 {
     class Conta
     {
-        private int numero;
-        private Cliente titular;
-        private double saldo;
+        ///private int numero;
+        //private Cliente titular;
+        //private double saldo;
+        public int Numero { get; set; }
+        public Cliente Titular { get; set; }
+        public double Saldo { get; set; }
 
-        public int Numero
-        {
-            get { return numero; }
-            set { numero = value; }
-        }
-
-        public Cliente Titular
-        {
-            get { return titular; }
-            set { titular = value; }
-        }
-
-        public double Saldo
-        {
-            get { return saldo; }
-            set { saldo = value; }
-        }
         public void Mostrar()
         {
             Console.WriteLine($"Numero: {Numero}\tSaldo: {Saldo}");

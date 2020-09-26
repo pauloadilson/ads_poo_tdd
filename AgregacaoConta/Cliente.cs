@@ -12,21 +12,9 @@ namespace AgregacaoConta
         private string rg;
         private string cpf;
 
-        public string Nome
-        {
-            get { return nome; }
-            set { nome = value; }
-        }
-        public string Rg
-        {
-            get { return rg; }
-            set { rg = value; }
-        }
-        public string Cpf
-        {
-            get { return cpf; }
-            set { cpf = value; }
-        }
+        public string Nome { get; set; }
+        public string Rg { get; set; }
+        public string Cpf { get; set; }
         public void Mostrar()
         {
             Console.WriteLine($"Nome: {Nome}\tRg: {Rg}\tCpf: {Cpf}");
