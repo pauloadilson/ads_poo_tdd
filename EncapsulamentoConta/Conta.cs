@@ -11,7 +11,11 @@ namespace EncapsulamentoConta
         private int numero;
         private string titular;
         private double saldo;
-        public Conta(int numero = 0, string titular = "", double saldo = 0.0)
+
+        public Conta() // UTILIZADO PARA CADASTRO -- INSERT
+            {
+            }
+        public Conta(int numero = 0, string titular = null, double saldo = 0) // UTILIZADO NA BUSCA query em BD
         {
             this.numero = numero;
             this.titular = titular;
