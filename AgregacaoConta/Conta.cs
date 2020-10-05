@@ -12,13 +12,14 @@ namespace AgregacaoConta
         //private Cliente titular;
         //private double saldo;
         public int Numero { get; set; }
-        public Cliente Titular { get; set; }
+        public List<Cliente> Titular;
         public double Saldo { get; set; }
 
         public void Mostrar()
         {
             Console.WriteLine($"Numero: {Numero}\tSaldo: {Saldo}");
-            this.Titular.Mostrar();
+            foreach (Cliente titular in Titular)
+                titular.Mostrar();
         }
     }
 }

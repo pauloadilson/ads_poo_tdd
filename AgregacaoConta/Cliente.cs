@@ -8,13 +8,20 @@ namespace AgregacaoConta
 {
     class Cliente
     {
-        private string nome;
-        private string rg;
-        private string cpf;
+        //private string nome;
+        //private string rg;
+        //private string cpf;
 
         public string Nome { get; set; }
         public string Rg { get; set; }
         public string Cpf { get; set; }
+
+        public Cliente(string nome, string rg, string cpf)
+        {
+            Nome = nome;
+            Rg = rg;
+            Cpf = cpf;
+        }
         public void Mostrar()
         {
             Console.WriteLine($"Nome: {Nome}\tRg: {Rg}\tCpf: {Cpf}");
