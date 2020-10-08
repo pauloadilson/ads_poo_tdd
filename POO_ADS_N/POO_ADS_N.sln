@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposicaoBanco", "..\Compo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposicaoBancoTests", "..\ComposicaoBancoTests\ComposicaoBancoTests.csproj", "{D23E6635-36A1-4045-AEF3-0565DB0F5266}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova", "..\Prova\Prova.csproj", "{45C6D279-104B-4139-91F4-EAA840219F80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{D23E6635-36A1-4045-AEF3-0565DB0F5266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D23E6635-36A1-4045-AEF3-0565DB0F5266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D23E6635-36A1-4045-AEF3-0565DB0F5266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C6D279-104B-4139-91F4-EAA840219F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C6D279-104B-4139-91F4-EAA840219F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C6D279-104B-4139-91F4-EAA840219F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C6D279-104B-4139-91F4-EAA840219F80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
