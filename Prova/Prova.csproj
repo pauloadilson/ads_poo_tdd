@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClasseProva.cs" />
-    <Compile Include="ClasseProva2.cs" />
+    <Compile Include="Chaveiro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
